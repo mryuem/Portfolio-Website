@@ -1,0 +1,100 @@
+#blog {
+  &__detail {
+    padding: 100px 0;
+    .content {
+      margin: auto;
+
+      // blog-başlığı
+      .blog-heading {
+        h2 {
+          font-size: 3rem;
+          color: $dark-color;
+        }
+        h2,
+        .date {
+          margin: 1rem 0;
+        }
+        .date {
+          font-size: 1.4rem;
+          margin-bottom: 4rem;
+        }
+      }
+
+      // blog-içeriği
+      .blog-content {
+        p {
+          color: $dark-color;
+        }
+        .border-left {
+          border-left: 4px solid $dark-color;
+          padding-left: 2rem;
+          font-weight: 600;
+        }
+      }
+
+      // blog-yorumları
+      .blog-comment {
+        padding-top: 100px;
+        .comment-title {
+          color: $dark-color;
+          margin-bottom: 2rem;
+        }
+
+        .comment-item {
+          display: flex;
+          .comment-info {
+            padding-left: 1rem;
+            align-items: center;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            p,
+            a {
+              font-weight: bold;
+              color: $dark-color;
+            }
+          }
+
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+
+        .comment-content {
+          .date {
+            margin: 1rem 0;
+            color: #5d5c5e;
+          }
+          p {
+            color: $dark-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+#page-nav-table {
+  padding-bottom: 5rem;
+  .items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    a {
+      i {
+        font-size: 1.6rem;
+        color: $dark-color;
+      }
+    }
+    .box-number {
+      padding-bottom: 0.4rem;
+      label {
+        font-size: 2rem;
+        color: $dark-color;
+      }
+    }
+  }
+}
